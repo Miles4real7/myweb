@@ -612,23 +612,7 @@ h2 span {
   margin-top: 0;
 }
 
-@media (max-width: 768px) {
-  section.home {
-    flex-direction: column; /* 垂直排列 */
-    align-items: center; /* 内容居中 */
-    text-align: center; /* 文字居中 */
-  }
 
-  .home-info {
-    max-width: 100%; /* 文字区域占满宽度 */
-    margin-bottom: 20px; /* 添加间距 */
-  }
-
-  .home-img img {
-    max-width: 200px; /* 图片缩小 */
-    margin: 0 auto; /* 图片居中 */
-  }
-}
 
 .footer {
   color: #fff;
@@ -683,75 +667,38 @@ h2 span {
   color: #1f242d;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .header {
-    flex-direction: column;
-    padding: 10px 20px;
+    padding: 2rem 4%;
   }
-
-  nav {
-    flex-direction: column;
-    gap: 10px;
+  section {
+    padding: 10rem 4% 2rem;
   }
 
   .home {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
+    padding: 0 4%;
   }
 
-  .home-info {
-    margin-bottom: 20px;
-    max-width: 90%;
-  }
-
-  .home-info h1 {
-    font-size: 2.5rem;
-  }
-
-  .home-img .img-box {
-    width: 60vw;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .education-row {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .education-box {
-    width: 100%;
+  .fotter {
+    padding: 2rem 4%;
   }
 }
 
-@media (max-width: 480px) {
-  nav a {
-    font-size: 0.9rem;
-    margin: 5px 0;
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    background-color: #162938;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
 
-  .btnLogin {
-    width: 90px;
-    height: 30px;
-    font-size: 0.8rem;
-  }
-
-  .home-info h1 {
+  .navbar a {
+    display: block;
     font-size: 2rem;
-  }
-
-  .home-info h2 {
-    font-size: 1.5rem;
-  }
-
-  .home-img .img-box {
-    width: 80%; /* 占宽 80% */
-    max-width: 200px; /* 最大宽度限制 */
-  }
-
-  .education-box {
-    padding: 10px; /* 减小内边距 */
+    margin: 3rem 0;
   }
 }
 section:target {
