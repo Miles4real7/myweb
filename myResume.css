@@ -352,8 +352,8 @@ h2 span {
 
 .education .education-row {
   display: flex;
-  /* flex-wrap: wrap; */
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 5rem;
 }
 
 .education-column .education-box {
@@ -361,7 +361,7 @@ h2 span {
 }
 
 .education-row .education-column {
-  flex: 1 1 30rem;
+  flex: 1 1 40rem;
 }
 
 .education-column .title {
@@ -612,8 +612,6 @@ h2 span {
   margin-top: 0;
 }
 
-
-
 .footer {
   color: #fff;
   display: flex;
@@ -621,7 +619,7 @@ h2 span {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: #1734249c;
+  background: rgba(0, 0, 0, 0.05);
 }
 .footer-text p {
   font-size: 1.6rem;
@@ -701,6 +699,10 @@ h2 span {
     margin: 3rem 0;
   }
 }
+section:target {
+  scroll-margin-top: 80px;
+}
+
 section:target {
   scroll-margin-top: 80px; /* 确保跳转内容不会被导航栏遮挡 */
 }
